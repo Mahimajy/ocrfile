@@ -1,0 +1,4 @@
+pytesseract
+opencv-python
+psycopg2
+pdf2image
