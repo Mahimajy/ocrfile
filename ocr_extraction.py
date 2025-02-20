@@ -50,7 +50,7 @@ def structure_data(text):
 
 # Main execution
 if __name__ == "__main__":
-    input_path = "sample_form.pdf" 
+    input_path = "data/sample_form.jpg" 
   # Change to actual path
     extracted_text = extract_text(input_path)
     structured_json = structure_data(extracted_text)
