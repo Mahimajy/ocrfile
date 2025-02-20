@@ -1,12 +1,9 @@
-CREATE TABLE patients (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
-    dob DATE
-);
+DROP TABLE IF EXISTS patients;
 
-CREATE TABLE forms_data (
-    id SERIAL PRIMARY KEY,
-    patient_id INT REFERENCES patients(id),
-    form_json JSONB,
-    created_at TIMESTAMP DEFAULT NOW()
+CREATE TABLE patients (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    dob TEXT,
+    age INTEGER,
+    diagnosis TEXT
 );
